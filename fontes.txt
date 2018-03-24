@@ -1,0 +1,31 @@
+Versão base: 4.0.3 (API Level 15)
+Pois abrange 99.6% dos dispositivos Androids (foram desconsideradas as versões anteriores (2.3.3 à 2.3.7) pois, embora possuam suporte ao sensor utilizado (giroscópio) os smartphones com tais versões não possuem um hardware adequado para esta aplicação).
+
+https://developer.android.com/about/dashboards/index.html
+
+####################################################################################################
+
+https://developer.android.com/guide/topics/sensors/sensors_overview.html
+
+MOTION SENSORS > GRAVITY SENSORS
+
+Android Sensor Framework
+
+gravity sensor is software-based sensors.
+
+# TYPE_GYROSCOPE:
+Measures a device's rate of rotation in rad/s around each of the three physical axes (x, y, and z).
+- Rotation detection (spin, turn, etc.).
+
+# TYPE_ROTATION_VECTOR:
+Measures the orientation of a device by providing the three elements of the device's rotation vector.
+- Motion detection and rotation detection.
+
+SENSOR TYPES > COMPOSITE SENSOR TYPES > rot ROTATION VECTOR
+
+Será utilizado o 'rot rotation vector' (que faz uso do sensor Acelerômetro e Giroscópio), que é semelhante ao 'rotation vector', porém não utiliza o campo magnético.
+
+(explicar melhor essa idéia):
+https://source.android.com/devices/sensors/sensor-types#rot_rotation_vector
+https://developer.android.com/guide/topics/sensors/sensors_position.html#sensors-pos-rotrot
+
